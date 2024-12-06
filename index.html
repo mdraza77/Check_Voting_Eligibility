@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Validation Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Check Your Voting Eligibility</h2>
+            <div class="decoration-line"></div>
+        </div>
+        <div class="sub-container">
+            <div class="input-group">
+                <i class='bx bx-cake'></i>
+                <input type="text" id="age" placeholder="Enter Your Age" required>
+            </div>
+            <button onclick="Validate_Age()">
+                <i class='bx bx-check-circle'></i>
+                Check Eligibility
+            </button>
+        </div>
+        <span title="Reload" onclick="showRefreshPopup()" class="refresh-btn">
+            <i class='bx bx-refresh'></i>
+        </span>
+        <div class="result-container">
+            <p id="result">Check if you're eligible to vote</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
